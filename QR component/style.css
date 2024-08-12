@@ -14,7 +14,7 @@ html, body {
 }
 
 body {
- background-color: rgb(204, 231, 239);
+  background-color: hsl(212, 45%, 89%);
 }
 #app {
   width: 100%;
