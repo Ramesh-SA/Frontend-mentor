@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  background-color: hsl(229, 57%, 11%);
+  font-size: 14px;
+}
+
+#app {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 70%;
+  min-width: 350px;
+}
+
+.content {
+  width: 100%;
+  display: flex; 
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.link-section {
+  background-color: hsl(228, 56%, 26%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  min-height: 220px;
+  width: 35%;
+  border-top-right-radius: 100px;
+  min-width: 350px;
+  max-width: 400px;
+}
+
+#logo {
+  width: auto;
+}
+
+.fylo {
+  margin-left: 20px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-left: 20px;
+}
+
+.icon-span {
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.data-section {
+  background-color: hsl(228, 56%, 26%);
+  height: 160px;
+  width: 50%;
+  min-width: 350px;
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  color: white;
+  border-radius: 10px;
+}
+
+.data-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.data-left-gb {
+  position: relative;
+}
+
+.data-left-container {
+  min-height: 80px;
+  width: 200px;
+  background-color: white;
+  color: black;
+  position: absolute;
+  bottom: 55px;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  letter-spacing: 1px;
+  font-weight: bolder;
+  border-radius: 7px;
+  border-bottom-right-radius: 0;
+}
+
+.data-left-container::after {
+  content: "";
+  position: absolute;
+  top: 100%;  
+  right: 0;
+  height: 20px;
+  width: 20px;
+  background: linear-gradient(to top right, hsl(228, 56%, 26%) 50%, white 50%);
+}
+
+.Gb-left {
+  font-size: small;
+  opacity: 0.5;
+}
+
+.progressbardiv {
+  width: 100%;
+  border-radius: 15px;
+  background-color: hsl(229, 57%, 11%);
+  border: 1px solid hsl(229, 57%, 11%);
+  display: flex;
+  height: 15px;
+}
+
+#progressbar {
+  width: 75%;
+  border-radius: 15px;
+
+  background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+
+  height: 100%;
+  position: relative;
+}
+
+.bar-container {
+  width: 100%;
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 50%;
+}
+
+.data-left {
+  margin-left: 0;
+}
+
+.round-icon {
+  height: 10px;
+  width: 10px;
+  background-color: white;
+  border-radius: 8px;
+  position: absolute;
+  top: 1px;
+  right: 0;
+}
+
+.consumed-value {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text {
+  opacity: 0.7;
+}
+
+strong {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 1085px) {
+  .data-left-container {
+    min-height: 70px;
+    width: 180px;
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 55px;
+    right: 50px;
+  }
+
+  .data-left-container::after {
+    display: none;
+  }
+
+  .data-left {
+    margin-left: 25px;
+  }
+}
