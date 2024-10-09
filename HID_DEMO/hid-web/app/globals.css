@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz@0,9..40;1,9..40&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 20 14.3% 4.1%;
+    --card: 0 0% 100%;
+    --card-foreground: 20 14.3% 4.1%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 14.3% 4.1%;
+    --primary: 37, 100%, 50%, 1;  /* Primary colors */
+    --primary-foreground: 60 9.1% 97.8%; 
+    --secondary: 37, 100%, 95%, 1; /* Secondary color */
+    --secondary-foreground: 24 9.8% 10%;
+    --muted: 60 4.8% 95.9%;
+    --muted-foreground: 25 5.3% 44.7%;
+    --accent: 60 4.8% 95.9%;
+    --accent-foreground: 24 9.8% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 60 9.1% 97.8%;
+    --border: 20 5.9% 90%;
+    --input: 20 5.9% 90%;
+    --ring: 24.6 95% 53.1%;
+    --radius: 20px;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    /* Additional variables */
+    --border-success: 148, 48%, 43%, 1;
+    --border-failure : 0, 100%, 50%, 1;
+    --button-inactive: 0, 0%, 91%, 1; 
+    --text-primary : 0, 0%, 16%, 1;
+    --text-secondary:0, 0%, 100%, 1;
+    --toast-success : 139, 73%, 87%, 1;
+    --toast-error : 0, 95%, 92%, 1;
+    
+  }
+
+
+
+}
+
+body {
+   font-family: "DM Sans", system-ui;
+}
+
+html {
+}
+
+.sidebar_wrapper {
+   @apply flex flex-col p-4 w-60 border-r border-gray-200;
+}
+
+.primary-icon {
+   @apply w-5 h-5 mr-2;
+}
+
+.avatar {
+   @apply h-8 w-8;
+}
+
+.header-primary {
+   @apply text-2xl font-bold;
+}
+
+.striped-table {
+   width: 100%;
+   border-collapse: collapse;
+}
+
+.striped-table th,
+.striped-table td {
+   padding: 8px; /* Cell padding */
+}
+
+.striped-table tbody tr:nth-child(even) {
+   @apply bg-secondary;
+}
+
+.table-container {
+   @apply space-y-4 flex flex-col flex-grow border-secondary;
+}
+
+.pagination {
+   @apply flex items-center p-0;
+}
+
+.pagination li {
+   margin: 0 4px;
+}
+
+.pagination li a {
+   border: 1px solid #e9e9e9;
+   padding: 4px 12px;
+   text-decoration: none;
+   border-radius: 5px;
+}
+
+.pagination .active a {
+   background-color: black;
+   color: white;
+}
+
+.break {
+   disabled: true;
+}
+
+li.disabled a {
+   cursor: not-allowed;
+   opacity: 0.6;
+}
+
+html,
+body {
+   overflow: auto;
+   scrollbar-width: none;
+   -ms-overflow-style: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+   width: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+   box-shadow: inset 0 0 5px lightgrey;
+   border-radius: 10px;
+   position: relative;
+   top: 20px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+   /* background: hsl(37, 100%, 50%, 1);  */
+   background: grey;
+   border-radius: 10px;
+}
+::-ms-input-placeholder {
+   /* Edge 12 -18 */
+   color: red;
+}
+
+#radix-\:Rmj6\: {
+  @apply relative top-6;
+}
+
+.Toastify__toast {
+@apply rounded-none relative font-bold top-16 min-h-3 font-primary bg-black !important
+}
+
+.Toastify__toast--success {
+   border-left: 8px solid hsla(148, 48%, 43%, 1) !important; 
+   background: hsla(139, 73%, 87%, 1) !important;
+   color : black !important
+ 
+
+   
+}
+
+.Toastify__toast--error {
+   border-left: 8px solid hsla(0, 76%, 57%, 1) !important; 
+   background: hsla(0, 95%, 92%, 1) !important;
+   color : black !important
+ 
+
+   
+}
