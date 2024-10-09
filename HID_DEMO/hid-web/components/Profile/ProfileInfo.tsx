@@ -26,10 +26,10 @@ export function SheetSide() {
    const { isOpen, openSheet, closeSheet } = useProfileSheetStore();
 
    const userDetails: userdetails = {
-      firstname: "Ramesh",
-      lastname: "S",
+      firstname: "Cristiano",
+      lastname: "Ronaldo",
       userid: "7",
-      email: "cr7@goat.com",
+      email: "cristiano@hid.com",
    };
 
    const labelsArray: { [key in keyof typeof userDetails]: string } = {
